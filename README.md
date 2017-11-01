@@ -1,3 +1,12 @@
+## galvanize-portfolio
+
+I just finished taking the "Get Prepared for the Web Development Immersive - Javascript Accelerated" course at [Galvanize Platte](https://www.galvanize.com/denver-platte/campus "Galvanize Platte 1644 Platte St. Denver, Co. 80202") in Denver Colorado.
+
+This is a project I put together as a part of my portfolio for the Galvanize application process.
+
+
+---
+
 ## Options to complete Standard 2:
 
 *Solve one standard logic puzzle, and submit your solution and an explanation of how you approached the problem. You can find an*  *explanation of how to solve this type of logic puzzle here and sample problems here.*
@@ -59,3 +68,5 @@ make it executable and edit
     atom solve.sh
 
 comments located in ["solve.sh"](https://github.com/jasmichael/problem22/blob/master/solve.sh) bash script to solve the steps I broke down above.
+
+here is a working [demo](http://jmh-galvanize-portfolio-3.surge.sh/)
