@@ -1,8 +1,11 @@
 ## Options to complete Standard 2:
-*Solve one standard logic puzzle, and submit your solution and an explanation of how you approached the problem. You can find an *  *explanation of how to solve this type of logic puzzle here and sample problems here.*
+
+*Solve one standard logic puzzle, and submit your solution and an explanation of how you approached the problem. You can find an*  *explanation of how to solve this type of logic puzzle here and sample problems here.*
 *Solve one Problem from Project Euler and submit your solution and an explanation of how you approached the problem.*
 *Create a youtube video, an essay, or something else where you demonstrate your problem solving skills.*
+
 ---
+
 I chose to solve problem 22 from Project Euler.
 https://projecteuler.net/problem=22
 
@@ -11,7 +14,9 @@ Using names.txt (right click and 'Save Link/Target As...'), a 46K text file cont
 For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
 
 What is the total of all the name scores in the file?
+
 ---
+
 scope of plan:
 download and inspect file, the file is a plain text. The file is one line, the names are in double quotes, the names are in CAPS, and names are delimited by commas.
 
