@@ -42,13 +42,13 @@ first I will create a directory for the project:
 
     mkdir galvanize-portfolio-3
 
-next  I go into my project directory and download the text file of names.
+go into project directory and download the text file of names.
 
     cd galvanize-portfolio-3
 
     wget https://projecteuler.net/project/resources/p022_names.txt
 
-I am going to create a bash script now where to start putting things into
+create a bash script now where to start putting things into
 
     touch solve.sh
 
