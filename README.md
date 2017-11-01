@@ -52,6 +52,10 @@ I am going to create a bash script now where to start putting things into
 
     touch solve.sh
 
+make it executable and edit
+
+    chmod +x solve.sh
+
     atom solve.sh
 
 comments located in "solve.sh" bash script to solve the steps I broke down above.
