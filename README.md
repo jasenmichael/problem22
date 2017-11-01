@@ -69,4 +69,4 @@ make it executable and edit
 
 comments located in ["solve.sh"](https://github.com/jasmichael/problem22/blob/master/solve.sh) bash script to solve the steps I broke down above.
 
-here is a working [demo](http://jmh-galvanize-portfolio-3.surge.sh/)
+here is a working site with a video showing the script in action (http://jmh-galvanize-portfolio-3.surge.sh/)
