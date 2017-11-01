@@ -18,23 +18,21 @@ scope of plan:
 download and inspect file, the file is a plain text. The file is one line, the names are in double quotes, the names are in CAPS, and names are delimited by commas.
 
 todo
-    1: get name list
-    2: set alphabet to their corresponding numeric values.
-    3: parse and sort name list.
-    4: get numeric value for each letter in each name and add them to get their name value.
-    5: for each name; get their alphabetical position and multiply it by name value to get name score.
-    6: add all name scores for answer to - What is the total of all the name scores in the file?
+1. get name list
+2. set alphabet to their corresponding numeric values.
+3. parse and sort name list.
+4. get numeric value for each letter in each name and add them to get their name value.
+5. for each name; get their alphabetical position and multiply it by name value to get name score.
+6. add all name scores for answer to - What is the total of all the name scores in the file?
 
 notes:
+This could be done in so many ways, but quickly I can figure out how to do this via the terminal and bash scripting.
 
-so to sort the names in a text file and do math.. hmm, this could be done in so many ways, but quickly I can figure out how to do this via the terminal and bash scripting.
-
-first I will create a directory for the project
+first I will create a directory for the project:
 
     cd Documents
 
     mkdir galvanize-portfolio-3
-
 
 next  I go into my project directory and download the text file of names.
 
@@ -42,14 +40,10 @@ next  I go into my project directory and download the text file of names.
 
     wget https://projecteuler.net/project/resources/p022_names.txt
 
-with a little research I used this command to sort, and replace each comma with a line break and save to "sortedNames.txt"
-
-    cat p022_names.txt | tr -s ',' '\n' | sort  | tr -d '"' > sortedNames.txt
-
 I am going to create a bash script now where to start putting things into
 
-   touch solve.sh
+    touch solve.sh
 
-   atom solve.sh
+    atom solve.sh
 
 comments located in "solve.sh" bash script to solve the steps I broke down above.
