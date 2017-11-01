@@ -5,7 +5,6 @@ echo "1: get the name list text file"
 wget https://projecteuler.net/project/resources/p022_names.txt
 echo "   saved p0022_names.txt"
 echo "---------------------------------------------------"
-
 echo "2: set the alphabet to their numeric value"
 A=1
 B=2
@@ -72,6 +71,7 @@ chmod +x math.sh && bash math.sh && rm math.sh
 echo "   file saved as nameVal.txt"
 echo "---------------------------------------------------"
 echo "5: multiply each name value by its alphabetical position."
+
 
 count=0
 echo "#!/bin/sh" > math.sh
