@@ -20,6 +20,7 @@ What is the total of all the name scores in the file?
 ---
 
 scope of plan:
+
 download and inspect file, the file is a plain text. The file is one line, the names are in double quotes, the names are in CAPS, and names are delimited by commas.
 
 todo
@@ -31,6 +32,7 @@ todo
 6. add all name scores for answer to - What is the total of all the name scores in the file?
 
 notes:
+
 This could be done in so many ways, but quickly I can figure out how to do this via the terminal and bash scripting.
 
 first I will create a directory for the project:
