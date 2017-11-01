@@ -38,7 +38,7 @@ todo:
 2. set alphabet to their corresponding numeric values.
 3. parse and sort name list.
 4. get numeric value for each letter in each name and add them to get their name value.
-5. for each name; get their alphabetical position and multiply it by name value to get name score.
+5. for each name get their alphabetical position and multiply it by name value to get name score.
 6. add all name scores for answer to - What is the total of all the name scores in the file?
 
 notes:
