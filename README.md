@@ -1,9 +1,9 @@
-Options to complete Standard 2:
-
+##Options to complete Standard 2:
+*
   Solve one standard logic puzzle, and submit your solution and an explanation of how you approached the problem. You can find an explanation of how to solve this type of logic puzzle here and sample problems here.
   Solve one Problem from Project Euler and submit your solution and an explanation of how you approached the problem.
   Create a youtube video, an essay, or something else where you demonstrate your problem solving skills.
-
+*
 
 I chose to solve problem 22 from Project Euler.
 https://projecteuler.net/problem=22
