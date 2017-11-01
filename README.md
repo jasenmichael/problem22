@@ -23,7 +23,8 @@ scope of plan:
 
 download and inspect file, the file is a plain text. The file is one line, the names are in double quotes, the names are in CAPS, and names are delimited by commas.
 
-todo
+todo:
+
 1. get name list
 2. set alphabet to their corresponding numeric values.
 3. parse and sort name list.
