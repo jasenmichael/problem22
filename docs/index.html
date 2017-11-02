@@ -1,0 +1,118 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Problem22</title>
+  <meta name="Problem22" content="Problem22">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="assets/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <link rel="stylesheet" href="assets/default.css">
+  <script src="assets/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="container">
+<div class="container">
+  <hr>
+  <div class="row">
+    <h1>My solution to "Problem22" </h1>
+  </div>
+  <div class="row">
+    <strong><p>you can see the script below or the source code with notes <a href="https://github.com/jasmichael/problem22" target="_blank">here</a>
+    </p></strong>
+  </div>
+  <hr>
+</div><!--./container -->
+
+
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-4">
+
+    <p>Using <a href="https://projecteuler.net/project/resources/p022_names.txt">names.txt</a> (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.</p>
+    <p>For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.</p>
+    <p>What is the total of all the name scores in the file?</p>
+
+</div><!--.col -->
+
+<div class="col-sm-12 col-md-6 col-lg-8">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/2fY1BiTFMeE" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+</div> <!--.row -->
+<hr>
+
+
+
+  <div style:"max-width:90%;">
+  <pre><code>
+    #!/bin/bash
+    wget https://projecteuler.net/project/resources/p022_names.txt
+    l=1
+    for letter in {A..Z} ; do
+      let $letter="$l"
+      #echo $l;
+      l=`expr $l + 1`;
+    done
+    cat p022_names.txt | tr -s ',' '\n' | sort  | tr -d '"' > sortedNames.txt
+    while IFS= read -r line; do
+      for ((idx=0; idx < ${#line}; idx++)); do
+        char=${line:$idx:1}
+        val=${!char}
+        printf '%s' " + " "$val" >> tmp
+      done
+       printf '\n' >> tmp
+    done < sortedNames.txt
+    rm -rf math.sh || true
+    echo "#!/bin/bash" > math.sh
+    sed  's .\{3\}  ' tmp >> math.sh
+    sed -i -e 's/^/expr /' math.sh && rm tmp
+    sed -i 's/$/ >> nameVal.txt/' math.sh
+    sed -i -e 's/expr #!/#!/g' math.sh
+    sed -i -e 's/h >> nameVal.txt/h/g' math.sh
+    chmod +x math.sh && bash math.sh && rm math.sh
+    count=0
+    echo "#!/bin/sh" > math.sh
+    while ((i++)); read -r line
+    do
+        echo  "expr " "$line" "\*" "$i" " >> nameScore.txt" >> math.sh
+    done < nameVal.txt
+    chmod +x math.sh && bash math.sh && rm math.sh
+    paste -sd+ nameScore.txt | bc 2>&1 | tee ANSWER.txt
+  </code></pre>
+  </div>
+  <hr>
+
+<style>
+img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
+<div class="row center-block">
+
+    <script type="text/javascript" src="https://asciinema.org/a/7UjEzQQgrE4bZROrXjv7Hd9vg.js" id="asciicast-7UjEzQQgrE4bZROrXjv7Hd9vg" async></script>
+</div>
+  <hr>
+  </div>
+</div>
+</div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/bootstrap.bundle.min.js"></script>
+  <script src="assets/main.js"></script>
+
+</body>
+</html>
