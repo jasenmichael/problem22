@@ -74,5 +74,3 @@ make it executable and edit
 comments located in ["solve.sh"](https://github.com/jasmichael/problem22/blob/master/solve.sh) bash script to solve the steps I broke down above.
 
 ![Alt Text](https://raw.githubusercontent.com/jasmichael/problem22/master/solve-sh.gif)
-
- also on [asciinema](https://asciinema.org/a/7UjEzQQgrE4bZROrXjv7Hd9vg)
