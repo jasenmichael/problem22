@@ -20,7 +20,7 @@ This is a project I put together as a part of my portfolio for the Galvanize app
 I choose to solve problem 22 from Project Euler.
 https://projecteuler.net/problem=22
 
-## my solution here (http://jmh-galvanize-portfolio-3.surge.sh/)
+## my solution here > http://jmh-galvanize-portfolio-3.surge.sh/
 
 ---
 
