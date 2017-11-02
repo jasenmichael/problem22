@@ -20,6 +20,10 @@ This is a project I put together as a part of my portfolio for the Galvanize app
 I choose to solve problem 22 from Project Euler.
 https://projecteuler.net/problem=22
 
+## my solution [here](http://jmh-galvanize-portfolio-3.surge.sh/)
+
+---
+
 Using names.txt (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
 
 For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
@@ -71,6 +75,4 @@ comments located in ["solve.sh"](https://github.com/jasmichael/problem22/blob/ma
 
 ![Alt Text](https://raw.githubusercontent.com/jasmichael/problem22/master/solve-sh.gif)
 
-here is a working site with a video showing the script in [action](http://jmh-galvanize-portfolio-3.surge.sh/)
-
-also on [asciinema](https://asciinema.org/a/7UjEzQQgrE4bZROrXjv7Hd9vg)
+ also on [asciinema](https://asciinema.org/a/7UjEzQQgrE4bZROrXjv7Hd9vg)
