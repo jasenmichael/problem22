@@ -69,7 +69,7 @@ make it executable and edit
 
 comments located in ["solve.sh"](https://github.com/jasmichael/problem22/blob/master/solve.sh) bash script to solve the steps I broke down above.
 
-
+![Alt Text](https://raw.githubusercontent.com/jasmichael/problem22/master/solve-sh.gif)
 
 here is a working site with a video showing the script in [action](http://jmh-galvanize-portfolio-3.surge.sh/)
 
