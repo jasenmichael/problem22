@@ -71,6 +71,6 @@ make it executable and edit
 
     atom solve.sh
 
-comments located in ["solve.sh"](https://github.com/jasmichael/problem22/blob/master/solve.sh) bash script to solve the steps I broke down above.
+comments located in ["solve.sh"](https://github.com/jasenmichael/problem22/blob/master/solve.sh) bash script to solve the steps I broke down above.
 
-![Alt Text](https://raw.githubusercontent.com/jasmichael/problem22/master/solve-sh.gif)
+![Alt Text](https://raw.githubusercontent.com/jasenmichael/problem22/master/solve-sh.gif)

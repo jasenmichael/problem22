@@ -52,7 +52,6 @@ echo "   file saved as nameVal.txt"
 echo "---------------------------------------------------"
 echo "5: multiply each name value by its alphabetical position."
 
-
 count=0
 echo "#!/bin/sh" > math.sh
 while ((i++)); read -r line
